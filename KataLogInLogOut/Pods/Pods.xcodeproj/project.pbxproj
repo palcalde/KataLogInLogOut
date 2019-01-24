@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1092ADDEBA17B169A98097CBA51C43E0 /* Pods-KataLogInLogOutUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC25F3BB3CC11946B17C358F033E389 /* Pods-KataLogInLogOutUITests-dummy.m */; };
+		301072F3A9C1A98803DDF7E3816D3503 /* Pods-KataLogInLogOut-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC01A5D62D5E7C3E0FC1B41F9DEF19D /* Pods-KataLogInLogOut-dummy.m */; };
+		7324CEEE17BB3F412468C10DFF2FDE2E /* Pods-KataLogInLogOutTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C4C1993D7DF62EB844BDA5508A767E /* Pods-KataLogInLogOutTests-dummy.m */; };
+		81260692FFB10C5EE87CB8946E328F46 /* Pods-KataLogInLogOut-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4003C7D8291B933F93E13512910183A6 /* Pods-KataLogInLogOut-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81B6E11BAB661504648BC9A6FAD4E0DC /* Pods-KataLogInLogOutTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 011244EA10226A3EC4CE6399A68285E0 /* Pods-KataLogInLogOutTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C44837D1CC8CD12ADCB75CF5599F7F0 /* Pods-KataLogInLogOutUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3493E19EE2CF7360B82AD00CF0FF48 /* Pods-KataLogInLogOutUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B638F2F56AE52669970BF5009A4A0AAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		B7930A5F802125736D2F71492DB1992D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		BFFC71F7D9C80A6AA3DEC3D743940DFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D6CEFBFEF4DFA895C31581AC06B25FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E8EF3817452DE458E0586AF9F1D180;
+			remoteInfo = "Pods-KataLogInLogOut";
+		};
+		B1C1D6FA76B3B9E03C3ADD7100E243E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E8EF3817452DE458E0586AF9F1D180;
+			remoteInfo = "Pods-KataLogInLogOut";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011244EA10226A3EC4CE6399A68285E0 /* Pods-KataLogInLogOutTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KataLogInLogOutTests-umbrella.h"; sourceTree = "<group>"; };
+		169262CC36205DB52B981161ABB4C8EF /* Pods-KataLogInLogOut-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KataLogInLogOut-resources.sh"; sourceTree = "<group>"; };
+		1BEB10CC42C762001B95ED175DE946A9 /* Pods-KataLogInLogOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KataLogInLogOutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24622F917D43FC0E12F396FC44BB65F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		256DB7DD3D239D787D3EDF9A8D251EB5 /* Pods-KataLogInLogOutTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KataLogInLogOutTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2DF7A2FEBC4A6F95AE901A53B7A2CEFD /* Pods-KataLogInLogOutTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KataLogInLogOutTests.modulemap"; sourceTree = "<group>"; };
+		3739557550E0E2C6661F0A83EA70A784 /* Pods-KataLogInLogOutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KataLogInLogOutUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4003C7D8291B933F93E13512910183A6 /* Pods-KataLogInLogOut-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KataLogInLogOut-umbrella.h"; sourceTree = "<group>"; };
+		427B6E81707B31FB5A4EEB1815BAFD23 /* Pods-KataLogInLogOutUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KataLogInLogOutUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		469A8F0E7DA93E37EF34A69233A95681 /* Pods-KataLogInLogOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KataLogInLogOut.debug.xcconfig"; sourceTree = "<group>"; };
+		5CB8A507663F1916280C021B43EE3CED /* Pods_KataLogInLogOutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KataLogInLogOutUITests.framework; path = "Pods-KataLogInLogOutUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FD61F537051C5120398C326CA5D55F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6227EF45AD8EE86B02EBC3197BD0DE10 /* Pods-KataLogInLogOutUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KataLogInLogOutUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6F6BF7C5D41270829E33A6E5EDD358D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70BCB9ADEF7E3E0DC0D09351892D5362 /* Pods-KataLogInLogOut-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KataLogInLogOut-acknowledgements.markdown"; sourceTree = "<group>"; };
+		775E143A8016234C3D8D6762738553FB /* Pods_KataLogInLogOutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KataLogInLogOutTests.framework; path = "Pods-KataLogInLogOutTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C3493E19EE2CF7360B82AD00CF0FF48 /* Pods-KataLogInLogOutUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KataLogInLogOutUITests-umbrella.h"; sourceTree = "<group>"; };
+		7C67818217AFF2A149CC6E881B828198 /* Pods-KataLogInLogOut.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KataLogInLogOut.modulemap"; sourceTree = "<group>"; };
+		7ECE2FD7858BB4F4F3998770E0B35587 /* Pods-KataLogInLogOutUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KataLogInLogOutUITests-resources.sh"; sourceTree = "<group>"; };
+		7F3BF4F23E4C2D26A64361B1A359A409 /* Pods-KataLogInLogOut-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KataLogInLogOut-frameworks.sh"; sourceTree = "<group>"; };
+		84C4C1993D7DF62EB844BDA5508A767E /* Pods-KataLogInLogOutTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KataLogInLogOutTests-dummy.m"; sourceTree = "<group>"; };
+		8AC01A5D62D5E7C3E0FC1B41F9DEF19D /* Pods-KataLogInLogOut-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KataLogInLogOut-dummy.m"; sourceTree = "<group>"; };
+		90C84716993A9CCF99B0AFC8D1C27B12 /* Pods_KataLogInLogOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KataLogInLogOut.framework; path = "Pods-KataLogInLogOut.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97525A59B37E549AEA296DA6C6AA76E8 /* Pods-KataLogInLogOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KataLogInLogOut.release.xcconfig"; sourceTree = "<group>"; };
+		A558BF09F8FB9C385D6F97F332477DBE /* Pods-KataLogInLogOutTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KataLogInLogOutTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA4BF5AD89474D6EDA61389F67827857 /* Pods-KataLogInLogOutUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KataLogInLogOutUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C1FF4BA4E14707F91854EBB8CAA2E8E2 /* Pods-KataLogInLogOutTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KataLogInLogOutTests-resources.sh"; sourceTree = "<group>"; };
+		CC82A82551F26505C64E144F2C0B71FC /* Pods-KataLogInLogOutTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KataLogInLogOutTests-frameworks.sh"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB57E3254692452833333B58996D0550 /* Pods-KataLogInLogOutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KataLogInLogOutTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE0412D29E1A6C80E26DF4BE8E12BB98 /* Pods-KataLogInLogOutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KataLogInLogOutUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA9247EE901A38FFF0DEA5292B6969DC /* Pods-KataLogInLogOut-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KataLogInLogOut-acknowledgements.plist"; sourceTree = "<group>"; };
+		EAC25F3BB3CC11946B17C358F033E389 /* Pods-KataLogInLogOutUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KataLogInLogOutUITests-dummy.m"; sourceTree = "<group>"; };
+		FE4B87DF8678D9978882DC4FC23DE918 /* Pods-KataLogInLogOutUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KataLogInLogOutUITests.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A9564E528079D31F25572C9A0C9AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7930A5F802125736D2F71492DB1992D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FDA1D1CC3BDEAD765650587657923E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B638F2F56AE52669970BF5009A4A0AAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4FC1CE194FB33613A80378108CB325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFC71F7D9C80A6AA3DEC3D743940DFA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3174F806DC9645471DA87330CC7A1D38 /* Pods-KataLogInLogOutUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60FD61F537051C5120398C326CA5D55F /* Info.plist */,
+				FE4B87DF8678D9978882DC4FC23DE918 /* Pods-KataLogInLogOutUITests.modulemap */,
+				427B6E81707B31FB5A4EEB1815BAFD23 /* Pods-KataLogInLogOutUITests-acknowledgements.markdown */,
+				BA4BF5AD89474D6EDA61389F67827857 /* Pods-KataLogInLogOutUITests-acknowledgements.plist */,
+				EAC25F3BB3CC11946B17C358F033E389 /* Pods-KataLogInLogOutUITests-dummy.m */,
+				6227EF45AD8EE86B02EBC3197BD0DE10 /* Pods-KataLogInLogOutUITests-frameworks.sh */,
+				7ECE2FD7858BB4F4F3998770E0B35587 /* Pods-KataLogInLogOutUITests-resources.sh */,
+				7C3493E19EE2CF7360B82AD00CF0FF48 /* Pods-KataLogInLogOutUITests-umbrella.h */,
+				3739557550E0E2C6661F0A83EA70A784 /* Pods-KataLogInLogOutUITests.debug.xcconfig */,
+				DE0412D29E1A6C80E26DF4BE8E12BB98 /* Pods-KataLogInLogOutUITests.release.xcconfig */,
+			);
+			name = "Pods-KataLogInLogOutUITests";
+			path = "Target Support Files/Pods-KataLogInLogOutUITests";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		678B08B54D86BC22EECF3101559B4E5C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9207516E0A3D13568686C84F0F802E8E /* Pods-KataLogInLogOut */,
+				945A5C80C36D73C40492DFF0445A4DD2 /* Pods-KataLogInLogOutTests */,
+				3174F806DC9645471DA87330CC7A1D38 /* Pods-KataLogInLogOutUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E1721815EE2B9F060B06776CC1B0BB3D /* Products */,
+				678B08B54D86BC22EECF3101559B4E5C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9207516E0A3D13568686C84F0F802E8E /* Pods-KataLogInLogOut */ = {
+			isa = PBXGroup;
+			children = (
+				6F6BF7C5D41270829E33A6E5EDD358D8 /* Info.plist */,
+				7C67818217AFF2A149CC6E881B828198 /* Pods-KataLogInLogOut.modulemap */,
+				70BCB9ADEF7E3E0DC0D09351892D5362 /* Pods-KataLogInLogOut-acknowledgements.markdown */,
+				EA9247EE901A38FFF0DEA5292B6969DC /* Pods-KataLogInLogOut-acknowledgements.plist */,
+				8AC01A5D62D5E7C3E0FC1B41F9DEF19D /* Pods-KataLogInLogOut-dummy.m */,
+				7F3BF4F23E4C2D26A64361B1A359A409 /* Pods-KataLogInLogOut-frameworks.sh */,
+				169262CC36205DB52B981161ABB4C8EF /* Pods-KataLogInLogOut-resources.sh */,
+				4003C7D8291B933F93E13512910183A6 /* Pods-KataLogInLogOut-umbrella.h */,
+				469A8F0E7DA93E37EF34A69233A95681 /* Pods-KataLogInLogOut.debug.xcconfig */,
+				97525A59B37E549AEA296DA6C6AA76E8 /* Pods-KataLogInLogOut.release.xcconfig */,
+			);
+			name = "Pods-KataLogInLogOut";
+			path = "Target Support Files/Pods-KataLogInLogOut";
+			sourceTree = "<group>";
+		};
+		945A5C80C36D73C40492DFF0445A4DD2 /* Pods-KataLogInLogOutTests */ = {
+			isa = PBXGroup;
+			children = (
+				24622F917D43FC0E12F396FC44BB65F8 /* Info.plist */,
+				2DF7A2FEBC4A6F95AE901A53B7A2CEFD /* Pods-KataLogInLogOutTests.modulemap */,
+				256DB7DD3D239D787D3EDF9A8D251EB5 /* Pods-KataLogInLogOutTests-acknowledgements.markdown */,
+				A558BF09F8FB9C385D6F97F332477DBE /* Pods-KataLogInLogOutTests-acknowledgements.plist */,
+				84C4C1993D7DF62EB844BDA5508A767E /* Pods-KataLogInLogOutTests-dummy.m */,
+				CC82A82551F26505C64E144F2C0B71FC /* Pods-KataLogInLogOutTests-frameworks.sh */,
+				C1FF4BA4E14707F91854EBB8CAA2E8E2 /* Pods-KataLogInLogOutTests-resources.sh */,
+				011244EA10226A3EC4CE6399A68285E0 /* Pods-KataLogInLogOutTests-umbrella.h */,
+				1BEB10CC42C762001B95ED175DE946A9 /* Pods-KataLogInLogOutTests.debug.xcconfig */,
+				DB57E3254692452833333B58996D0550 /* Pods-KataLogInLogOutTests.release.xcconfig */,
+			);
+			name = "Pods-KataLogInLogOutTests";
+			path = "Target Support Files/Pods-KataLogInLogOutTests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1721815EE2B9F060B06776CC1B0BB3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90C84716993A9CCF99B0AFC8D1C27B12 /* Pods_KataLogInLogOut.framework */,
+				775E143A8016234C3D8D6762738553FB /* Pods_KataLogInLogOutTests.framework */,
+				5CB8A507663F1916280C021B43EE3CED /* Pods_KataLogInLogOutUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BF1BDFC96FB9C61E631E515A61E4323 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C44837D1CC8CD12ADCB75CF5599F7F0 /* Pods-KataLogInLogOutUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07896991D4865BF502D427DFF358F8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B6E11BAB661504648BC9A6FAD4E0DC /* Pods-KataLogInLogOutTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA77CC838A2BD8D8C75F0D3FE44E2C8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81260692FFB10C5EE87CB8946E328F46 /* Pods-KataLogInLogOut-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9EC44208204294C46B7182B06FAE62A6 /* Pods-KataLogInLogOutUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F1B85DBA92068652DBA25C101D375A9 /* Build configuration list for PBXNativeTarget "Pods-KataLogInLogOutUITests" */;
+			buildPhases = (
+				6BF1BDFC96FB9C61E631E515A61E4323 /* Headers */,
+				01408079C6E7E713138BB635C7A1A3AA /* Sources */,
+				47FDA1D1CC3BDEAD765650587657923E /* Frameworks */,
+				23B6D85DD4649C778C8FA36C73930D7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EAB1F86F8226A11B078DCDD49052A1 /* PBXTargetDependency */,
+			);
+			name = "Pods-KataLogInLogOutUITests";
+			productName = "Pods-KataLogInLogOutUITests";
+			productReference = 5CB8A507663F1916280C021B43EE3CED /* Pods_KataLogInLogOutUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4E8EF3817452DE458E0586AF9F1D180 /* Pods-KataLogInLogOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D96BA4C17DFCB1B9BEBFB69C5F3427F /* Build configuration list for PBXNativeTarget "Pods-KataLogInLogOut" */;
+			buildPhases = (
+				EA77CC838A2BD8D8C75F0D3FE44E2C8C /* Headers */,
+				F7D51F6179B7AB2B2F118E3E02EA0434 /* Sources */,
+				04A9564E528079D31F25572C9A0C9AE3 /* Frameworks */,
+				C694860FB61A2391CF291CAF5D68CB44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KataLogInLogOut";
+			productName = "Pods-KataLogInLogOut";
+			productReference = 90C84716993A9CCF99B0AFC8D1C27B12 /* Pods_KataLogInLogOut.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0F3781F134450EBDD270E1B3DC4A320 /* Pods-KataLogInLogOutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D3062B9B06789928A6B36B2D0A2A12 /* Build configuration list for PBXNativeTarget "Pods-KataLogInLogOutTests" */;
+			buildPhases = (
+				E07896991D4865BF502D427DFF358F8F /* Headers */,
+				FCB40A1F1EA975BC100959DFB34ED3BB /* Sources */,
+				7D4FC1CE194FB33613A80378108CB325 /* Frameworks */,
+				61D7D76D0F13DDB1D0D1EE3D824ED99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61BF368871DFE63C324C69A8DC6464ED /* PBXTargetDependency */,
+			);
+			name = "Pods-KataLogInLogOutTests";
+			productName = "Pods-KataLogInLogOutTests";
+			productReference = 775E143A8016234C3D8D6762738553FB /* Pods_KataLogInLogOutTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E1721815EE2B9F060B06776CC1B0BB3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4E8EF3817452DE458E0586AF9F1D180 /* Pods-KataLogInLogOut */,
+				F0F3781F134450EBDD270E1B3DC4A320 /* Pods-KataLogInLogOutTests */,
+				9EC44208204294C46B7182B06FAE62A6 /* Pods-KataLogInLogOutUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23B6D85DD4649C778C8FA36C73930D7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D7D76D0F13DDB1D0D1EE3D824ED99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C694860FB61A2391CF291CAF5D68CB44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01408079C6E7E713138BB635C7A1A3AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1092ADDEBA17B169A98097CBA51C43E0 /* Pods-KataLogInLogOutUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D51F6179B7AB2B2F118E3E02EA0434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301072F3A9C1A98803DDF7E3816D3503 /* Pods-KataLogInLogOut-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB40A1F1EA975BC100959DFB34ED3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7324CEEE17BB3F412468C10DFF2FDE2E /* Pods-KataLogInLogOutTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26EAB1F86F8226A11B078DCDD49052A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KataLogInLogOut";
+			target = D4E8EF3817452DE458E0586AF9F1D180 /* Pods-KataLogInLogOut */;
+			targetProxy = B1C1D6FA76B3B9E03C3ADD7100E243E5 /* PBXContainerItemProxy */;
+		};
+		61BF368871DFE63C324C69A8DC6464ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KataLogInLogOut";
+			target = D4E8EF3817452DE458E0586AF9F1D180 /* Pods-KataLogInLogOut */;
+			targetProxy = 4D6CEFBFEF4DFA895C31581AC06B25FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0DD2D040A78C1730B0364903C82FE85E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB57E3254692452833333B58996D0550 /* Pods-KataLogInLogOutTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KataLogInLogOutTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KataLogInLogOutTests/Pods-KataLogInLogOutTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BA7C95656FE6448D6C0DD4448EBCE50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0412D29E1A6C80E26DF4BE8E12BB98 /* Pods-KataLogInLogOutUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KataLogInLogOutUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KataLogInLogOutUITests/Pods-KataLogInLogOutUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		92BC10E92B2A5736CEACCC231D7842F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3739557550E0E2C6661F0A83EA70A784 /* Pods-KataLogInLogOutUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KataLogInLogOutUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KataLogInLogOutUITests/Pods-KataLogInLogOutUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE5E6B2DF84D5001B1F15986EFD74D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97525A59B37E549AEA296DA6C6AA76E8 /* Pods-KataLogInLogOut.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KataLogInLogOut/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KataLogInLogOut/Pods-KataLogInLogOut.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2AEEDFBD9757D5EB06025A4BC3B4260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469A8F0E7DA93E37EF34A69233A95681 /* Pods-KataLogInLogOut.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KataLogInLogOut/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KataLogInLogOut/Pods-KataLogInLogOut.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2CF1C6712B7BFEECF3F6B86A6E23388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BEB10CC42C762001B95ED175DE946A9 /* Pods-KataLogInLogOutTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KataLogInLogOutTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KataLogInLogOutTests/Pods-KataLogInLogOutTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D96BA4C17DFCB1B9BEBFB69C5F3427F /* Build configuration list for PBXNativeTarget "Pods-KataLogInLogOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AEEDFBD9757D5EB06025A4BC3B4260 /* Debug */,
+				BE5E6B2DF84D5001B1F15986EFD74D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F1B85DBA92068652DBA25C101D375A9 /* Build configuration list for PBXNativeTarget "Pods-KataLogInLogOutUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92BC10E92B2A5736CEACCC231D7842F8 /* Debug */,
+				4BA7C95656FE6448D6C0DD4448EBCE50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D3062B9B06789928A6B36B2D0A2A12 /* Build configuration list for PBXNativeTarget "Pods-KataLogInLogOutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CF1C6712B7BFEECF3F6B86A6E23388 /* Debug */,
+				0DD2D040A78C1730B0364903C82FE85E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
