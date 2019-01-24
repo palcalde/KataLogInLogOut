@@ -8,6 +8,12 @@
 
 import UIKit
 
+class LoginTimeProvider: TimeProvider {
+    var seconds: Int {
+        return Int(Date.timeIntervalBetween1970AndReferenceDate)
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var loginTextField: UITextField!
@@ -53,9 +59,7 @@ class ViewController: UIViewController {
     }
 
     private func logOut() {
-        loggedIn = !(Int(Date.timeIntervalSinceReferenceDate) % 2 == 0)
+        loggedIn = !LogOutUseCase().shouldLogOut()
     }
-
-    
 }
 
