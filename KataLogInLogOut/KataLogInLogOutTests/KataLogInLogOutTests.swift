@@ -13,9 +13,12 @@ class KataLogInLogOutTests: XCTestCase {
 
     class ValidateUserUseCaseMock: ValidateUserUseCase {
         var isValid = false
+        var completion: ((Bool) -> ())? = nil
 
         override func validate(user: String, password: String, completion: @escaping (Bool) -> ()) {
-            completion(isValid)
+            if let completion = self.completion {
+                completion(isValid)
+            }
         }
     }
 
@@ -99,13 +102,19 @@ class KataLogInLogOutTests: XCTestCase {
     func testSuccessfullLogIn() {
         let loginViewMock = LoginViewMock()
         let validateUserMock = ValidateUserUseCaseMock()
+        let expectation = self.expectation(description: "Validate user")
         validateUserMock.isValid = true
+
+        validateUserMock.completion = { result in
+            if result == true {
+                expectation.fulfill()
+            }
+        }
         
         let presenter = ViewControllerPresenter(view: loginViewMock, validateUserUseCase: validateUserMock)
 
         presenter.didTapOnLogIn(user: "admin", pass: "admin")
-
-        XCTAssertTrue(loginViewMock.showLogOutCalled)
+        waitForExpectations(timeout: 10)
     }
 
     func testWrongLogIn() {
