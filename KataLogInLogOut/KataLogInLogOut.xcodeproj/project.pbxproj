@@ -14,6 +14,7 @@
 		6E0E3E7B21FA083400B5AA8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0E3E7921FA083400B5AA8C /* LaunchScreen.storyboard */; };
 		6E0E3E8621FA083500B5AA8C /* KataLogInLogOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0E3E8521FA083500B5AA8C /* KataLogInLogOutTests.swift */; };
 		6E0E3E9121FA083500B5AA8C /* KataLogInLogOutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0E3E9021FA083500B5AA8C /* KataLogInLogOutUITests.swift */; };
+		6E0E3EA321FA1A1800B5AA8C /* ValidateUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0E3EA221FA1A1800B5AA8C /* ValidateUserUseCase.swift */; };
 		8310012D1D997B11B550DF96 /* Pods_KataLogInLogOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14677E92CFBE73CCFFC50148 /* Pods_KataLogInLogOutTests.framework */; };
 		C92D1651716B1E315E0FA621 /* Pods_KataLogInLogOutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980EF4065FC1C2684D4678D9 /* Pods_KataLogInLogOutUITests.framework */; };
 		EC35BA1D99794270FFE744B8 /* Pods_KataLogInLogOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF858776E633F8B35BB254B /* Pods_KataLogInLogOut.framework */; };
@@ -55,6 +56,7 @@
 		6E0E3E8C21FA083500B5AA8C /* KataLogInLogOutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataLogInLogOutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0E3E9021FA083500B5AA8C /* KataLogInLogOutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataLogInLogOutUITests.swift; sourceTree = "<group>"; };
 		6E0E3E9221FA083500B5AA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0E3EA221FA1A1800B5AA8C /* ValidateUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUserUseCase.swift; sourceTree = "<group>"; };
 		980EF4065FC1C2684D4678D9 /* Pods_KataLogInLogOutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataLogInLogOutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A035352B508610B5F9854B69 /* Pods-KataLogInLogOutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLogInLogOutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataLogInLogOutTests/Pods-KataLogInLogOutTests.release.xcconfig"; sourceTree = "<group>"; };
 		D75043A2E2C5BB89A35F5E63 /* Pods-KataLogInLogOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataLogInLogOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataLogInLogOut/Pods-KataLogInLogOut.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		6E0E3E6F21FA083200B5AA8C /* KataLogInLogOut */ = {
 			isa = PBXGroup;
 			children = (
+				6E0E3EA121FA19F700B5AA8C /* UseCases */,
 				6E0E3E7021FA083200B5AA8C /* AppDelegate.swift */,
 				6E0E3E7221FA083200B5AA8C /* ViewController.swift */,
 				6E0E3E7421FA083200B5AA8C /* Main.storyboard */,
@@ -153,6 +156,14 @@
 				6E0E3E9221FA083500B5AA8C /* Info.plist */,
 			);
 			path = KataLogInLogOutUITests;
+			sourceTree = "<group>";
+		};
+		6E0E3EA121FA19F700B5AA8C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6E0E3EA221FA1A1800B5AA8C /* ValidateUserUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		C01B89195CF76812FE7E5092 /* Frameworks */ = {
@@ -368,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0E3EA321FA1A1800B5AA8C /* ValidateUserUseCase.swift in Sources */,
 				6E0E3E7321FA083200B5AA8C /* ViewController.swift in Sources */,
 				6E0E3E7121FA083200B5AA8C /* AppDelegate.swift in Sources */,
 			);
