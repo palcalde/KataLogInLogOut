@@ -42,8 +42,11 @@
                                     <action selector="didEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="k4h-mc-XYb"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUK-WN-cFC">
-                                <rect key="frame" x="157" y="266" width="42" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUK-WN-cFC">
+                                <rect key="frame" x="137.5" y="266" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="a6d-67-Ocp"/>
+                                </constraints>
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="didTapOnLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6U-No-C7W"/>
@@ -64,6 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="logInButton" destination="JUK-WN-cFC" id="l2z-t5-mGp"/>
                         <outlet property="loginTextField" destination="JLq-OG-CoE" id="Bdx-H8-xUw"/>
                         <outlet property="passwordTextField" destination="c6e-BA-2Dn" id="aWu-2B-RA1"/>
                     </connections>

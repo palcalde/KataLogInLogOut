@@ -8,5 +8,4 @@ before_install:
 
 script:
   - cd KataLogInLogOut
-  - swiftlint
   - set -o pipefail && xcodebuild -workspace KataLogInLogOut.xcworkspace -scheme 'KataLogInLogOut' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
