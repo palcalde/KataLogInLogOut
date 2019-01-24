@@ -10,6 +10,15 @@ import XCTest
 @testable import KataLogInLogOut
 
 class KataLogInLogOutTests: XCTestCase {
+
+    class ValidateUserUseCaseMock: ValidateUserUseCase {
+        var isValid = false
+
+        override func validate(user: String, password: String, completion: @escaping (Bool) -> ()) {
+            completion(isValid)
+        }
+    }
+
     class LoginViewMock: LoginView {
         var showLogOutCalled = false
         var showLogInCalled = false
@@ -52,11 +61,29 @@ class KataLogInLogOutTests: XCTestCase {
     }
 
     func testValidtingWorksCorrectInputs() {
-        validDataSet.forEach { XCTAssertTrue(validateUserUseCase.validate(user: $0, password: $1)) }
+        validDataSet.forEach {
+            let expectation = self.expectation(description: "Validate user")
+            validateUserUseCase.validate(user: $0, password: $1) { result in
+                if result {
+                    expectation.fulfill()
+                }
+            }
+        }
+
+        waitForExpectations(timeout: 10)
     }
 
     func testValidatingFailsForInvalidDataSets() {
-        invalidDataSet.forEach { XCTAssertFalse(validateUserUseCase.validate(user: $0, password: $1)) }
+        invalidDataSet.forEach {
+            let expectation = self.expectation(description: "Validate user")
+            validateUserUseCase.validate(user: $0, password: $1) { result in
+                if !result {
+                    expectation.fulfill()
+                }
+            }
+        }
+
+        waitForExpectations(timeout: 10)
     }
 
     func testLogoutWorksWhenSecondIsEven() {
@@ -71,7 +98,10 @@ class KataLogInLogOutTests: XCTestCase {
 
     func testSuccessfullLogIn() {
         let loginViewMock = LoginViewMock()
-        let presenter = ViewControllerPresenter(view: loginViewMock)
+        let validateUserMock = ValidateUserUseCaseMock()
+        validateUserMock.isValid = true
+        
+        let presenter = ViewControllerPresenter(view: loginViewMock, validateUserUseCase: validateUserMock)
 
         presenter.didTapOnLogIn(user: "admin", pass: "admin")
 

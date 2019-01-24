@@ -12,11 +12,11 @@ class ViewControllerPresenter: ViewControllerActions {
     var view: LoginView!
     var timeProvider: TimeProvider
 
-    init(view: LoginView, timeProvider: TimeProvider = LoginTimeProvider()) {
+    init(view: LoginView, timeProvider: TimeProvider = LoginTimeProvider(), validateUserUseCase: ValidateUserUseCase = ValidateUserUseCase()) {
         self.view = view
         self.timeProvider = timeProvider
 
-        self.validateUserUseCase = ValidateUserUseCase()
+        self.validateUserUseCase = validateUserUseCase
         self.logOutUserUseCase = LogOutUseCase(timeProvider: timeProvider)
     }
 
@@ -24,9 +24,11 @@ class ViewControllerPresenter: ViewControllerActions {
         let user = user ?? ""
         let pass = pass ?? ""
 
-        if validateUserUseCase.validate(user: user, password: pass) {
-            view.showLogOut()
-        }
+        validateUserUseCase.validate(user: user, password: pass, completion: { [weak self] result in
+            if result {
+                self?.view.showLogOut()
+            }
+        })
     }
     
     func didTapOnLogOut() {
