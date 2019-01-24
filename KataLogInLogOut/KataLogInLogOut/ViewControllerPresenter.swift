@@ -6,13 +6,18 @@ protocol LoginView {
 }
 
 class ViewControllerPresenter: ViewControllerActions {
-    let validateUserUseCase = ValidateUserUseCase()
-    let logOutUserUseCase = LogOutUseCase()
+    let validateUserUseCase: ValidateUserUseCase
+    let logOutUserUseCase: LogOutUseCase
 
     var view: LoginView!
+    var timeProvider: TimeProvider
 
-    init(view: LoginView) {
+    init(view: LoginView, timeProvider: TimeProvider = LoginTimeProvider()) {
         self.view = view
+        self.timeProvider = timeProvider
+
+        self.validateUserUseCase = ValidateUserUseCase()
+        self.logOutUserUseCase = LogOutUseCase(timeProvider: timeProvider)
     }
 
     func didTapOnLogIn(user: String?, pass: String?) {
@@ -21,8 +26,6 @@ class ViewControllerPresenter: ViewControllerActions {
 
         if validateUserUseCase.validate(user: user, password: pass) {
             view.showLogOut()
-        } else {
-            fatalError("invalid data")
         }
     }
     

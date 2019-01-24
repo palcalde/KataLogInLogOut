@@ -30,7 +30,7 @@ class ViewController: UIViewController, LoginView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        presenter = ViewControllerPresenter(view: self)
+        presenter = ViewControllerPresenter(view: self, timeProvider: LoginTimeProvider())
     }
 
     private var loggedIn = false {

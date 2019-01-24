@@ -10,6 +10,18 @@ import XCTest
 @testable import KataLogInLogOut
 
 class KataLogInLogOutTests: XCTestCase {
+    class LoginViewMock: LoginView {
+        var showLogOutCalled = false
+        var showLogInCalled = false
+
+        func showLogIn() {
+            showLogInCalled = true
+        }
+
+        func showLogOut() {
+            showLogOutCalled = true
+        }
+    }
 
     class TimeProviderMock: TimeProvider {
         var secondsMocked: Int?
@@ -57,4 +69,41 @@ class KataLogInLogOutTests: XCTestCase {
         XCTAssertFalse(logOutUseCase.shouldLogOut())
     }
 
+    func testSuccessfullLogIn() {
+        let loginViewMock = LoginViewMock()
+        let presenter = ViewControllerPresenter(view: loginViewMock)
+
+        presenter.didTapOnLogIn(user: "admin", pass: "admin")
+
+        XCTAssertTrue(loginViewMock.showLogOutCalled)
+    }
+
+    func testWrongLogIn() {
+        let loginViewMock = LoginViewMock()
+        let presenter = ViewControllerPresenter(view: loginViewMock)
+
+        presenter.didTapOnLogIn(user: "", pass: "admin")
+
+        XCTAssertFalse(loginViewMock.showLogInCalled)
+    }
+
+    func testSucessfullLogOut() {
+        let loginViewMock = LoginViewMock()
+        let presenter = ViewControllerPresenter(view: loginViewMock, timeProvider: timeProviderMock)
+        timeProviderMock.secondsMocked = 2
+
+        presenter.didTapOnLogOut()
+
+        XCTAssertTrue(loginViewMock.showLogInCalled)
+    }
+
+    func testWrongLogOut() {
+        let loginViewMock = LoginViewMock()
+        timeProviderMock.secondsMocked = 1
+        let presenter = ViewControllerPresenter(view: loginViewMock, timeProvider: timeProviderMock)
+
+        presenter.didTapOnLogOut()
+
+        XCTAssertFalse(loginViewMock.showLogOutCalled)
+    }
 }
