@@ -14,11 +14,24 @@ class LoginTimeProvider: TimeProvider {
     }
 }
 
-class ViewController: UIViewController {
+protocol ViewControllerActions {
+    func didTapOnLogIn(user: String?, pass: String?)
+    func didTapOnLogOut()
+}
+
+class ViewController: UIViewController, LoginView {
 
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
+
+    var presenter: ViewControllerPresenter!
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+
+        presenter = ViewControllerPresenter(view: self)
+    }
 
     private var loggedIn = false {
         didSet {
@@ -30,6 +43,7 @@ class ViewController: UIViewController {
             } else {
                 logInButton.setTitle("Log In", for: UIControl.State.normal)
             }
+            view.resignFirstResponder()
         }
     }
 
@@ -41,25 +55,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapOnLogIn(_ sender: Any) {
-        loggedIn ? logOut() : logIn()
+        if loggedIn {
+            presenter.didTapOnLogOut()
+        } else {
+            presenter.didTapOnLogIn(user: loginTextField.text, pass: passwordTextField.text)
+        }
     }
 
-    private func logIn() {
-        if loginTextField.text != "admin" {
-            fatalError("error!")
-        }
+    func showLogIn() {
+        loggedIn = false
+    }
 
-        if passwordTextField.text != "admin" {
-            fatalError("error!")
-        }
-
+    func showLogOut() {
         loggedIn = true
-
-        view.resignFirstResponder()
-    }
-
-    private func logOut() {
-        loggedIn = !LogOutUseCase().shouldLogOut()
     }
 }
 
