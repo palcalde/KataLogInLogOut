@@ -20,22 +20,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didEndEditing(_ sender: Any) {
-        switch sender {
-        case loginTextField as UITextField:
-            if loginTextField.text != "admin" {
-                fatalError("error!")
-            }
-
-        case passwordTextField as UITextField:
-            if passwordTextField.text != "admin" {
-                fatalError("error!")
-            }
-        default:
-            fatalError("unknown sender")
-        }
     }
 
     @IBAction func didTapOnLogIn(_ sender: Any) {
+        if loginTextField.text != "admin" {
+            fatalError("error!")
+        }
+
+        if passwordTextField.text != "admin" {
+            fatalError("error!")
+        }
+
         view.resignFirstResponder()
     }
 
